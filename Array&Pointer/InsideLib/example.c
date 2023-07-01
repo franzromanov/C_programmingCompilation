@@ -1,3 +1,5 @@
+//example usage of inside() function from inside library
+//inside(var,array)
 #include <stdio.h>
 #define size 10
 #include "inside.h"
