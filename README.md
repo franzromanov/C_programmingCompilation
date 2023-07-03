@@ -1,2 +1,2 @@
 # C_programmingCompilation
-compilation of simple  c programs for training your skill
+compilation of simple  c programs to train your skill
