@@ -25,3 +25,8 @@ int sum=0;
 for(int i=0; i<len;i++)sum=sum+(*(arr+i));
 *bag=sum;
 }
+
+//Turn All of The Elements to Zero
+void arrZero(int *arr, int len){
+for(int i=0;i<len;i++)*(arr+i)=0;
+}
