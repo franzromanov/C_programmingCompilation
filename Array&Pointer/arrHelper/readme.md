@@ -1,5 +1,5 @@
 # Basic Array Helper
--Includes Array value Filling and Printing  
+-Includes Array value Filling,array's element Printing,etc  
 -Run ex to see how it works  
 -check the main code: ex.c  
 -check the library: helper.c,helper.h(header)  
