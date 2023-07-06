@@ -6,9 +6,9 @@
 -link ex.c and helper.c using cc compiler  
 
 # command:  
-
-cc -c -g ex.c  
+on linux terminal:  
+>> cc -c -g ex.c  
   
-cc -c -g helper.c  
+>> cc -c -g helper.c  
   
-cc -o ex ex.o helper.o  
+>> cc -o ex ex.o helper.o  
