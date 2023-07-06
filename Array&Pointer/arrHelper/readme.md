@@ -7,7 +7,7 @@
 
 # command:  
 on linux terminal:  
-\\ cc -c -g ex.c  
+<< cc -c -g ex.c  
   
 >> cc -c -g helper.c  
   
