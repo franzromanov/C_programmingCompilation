@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "stringext.h"
+#include <string.h>
 //word_counter
 int wordcount(char* str,int len){
 int counter=0;
