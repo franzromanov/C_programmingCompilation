@@ -92,3 +92,23 @@ bool is_inside(wrap* WRAP,int val){
 }
  return false;
 }
+
+
+
+//part------------------------------[6]
+int _ITEM_COUNT(wrap* WRAP,int val){
+
+ //initiate
+ int count=0;
+ node* dump=WRAP->head;
+
+ if(dump==NULL)return count;
+ if(dump->value==val)count++;
+ while(1){
+  
+  dump=dump->next_nodeAddr;
+  if(dump==NULL)return count;
+  if(dump->value==val)count++;
+}
+
+}
