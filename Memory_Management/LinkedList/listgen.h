@@ -43,4 +43,8 @@ void _WIPE(wrap* WRAP,bool* stat);
 bool is_inside(wrap* WRAP,int val);
 
 
+//CountItem-------------------------------------------------[6]
+int _ITEM_COUNT(wrap* Wrap,int val);
+
+
 ////////////////////////////////////////////////////////////////////
