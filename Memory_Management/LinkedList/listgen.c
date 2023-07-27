@@ -63,15 +63,32 @@ void _WIPE(wrap* WRAP,bool* stat){
  node* tmp;
  node* dump=WRAP->head;
  if(dump==NULL)*stat=false;
- while(1){
-   tmp=dump;
-   dump=dump->next_nodeAddr;
-   free(tmp);
-   if(dump==NULL)break;
+ else{
+  while(1){
+    tmp=dump;
+    dump=dump->next_nodeAddr;
+    free(tmp);
+    if(dump==NULL)break;
+}
+}
+ 
+ free(WRAP);
+
+ *stat=true;
 }
 
 
- free(WRAP);
-
- *stat=true; 
+//part------------------------------[5]
+bool is_inside(wrap* WRAP,int val){ 
+  
+ //initiate
+ node* dump=WRAP->head;
+ if(dump==NULL)return false;
+ if(dump->value==val)return true;
+ while(1){ 
+  dump=dump->next_nodeAddr;
+  if(dump==NULL)break;
+  if(dump->value==val)return true;
+}
+ return false;
 }
