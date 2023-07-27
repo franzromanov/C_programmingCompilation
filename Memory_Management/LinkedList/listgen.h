@@ -39,5 +39,8 @@ int N_COUNT(wrap* WRAP);
 void _WIPE(wrap* WRAP,bool* stat);
 
 
+//ItemChecker-----------------------------------------------[5]
+bool is_inside(wrap* WRAP,int val);
+
 
 ////////////////////////////////////////////////////////////////////
