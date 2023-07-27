@@ -23,6 +23,14 @@ int main(){
  fprintf(stdout,"\n\n\e[0;94mnumber of node: %d\n",count);
 
 
+ 
+//check_item_existence
+ stat=is_inside(WRAP_ME,2);
+ if(stat==true)fprintf(stdout,"\e[0;97mitem exist!!!\n");
+ if(stat==false)fprintf(stdout,"\e[0;91mitem not exist!!!\n");
+
+
+
 //clean_mem
  _WIPE(WRAP_ME,&stat);
  if(stat==true)fprintf(stdout,"\e[0;97mmemory has been cleared!!!\n");
