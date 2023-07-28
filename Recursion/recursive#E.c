@@ -2,22 +2,19 @@
 
 //declare
 int num;
-char word;
-
+int digit;
 
 //func
-int _REC_E(int count){
- int units=count%10;
- int tens=(count/10)%10;
+int _REC_E(int num,int digit){
  
- if(count<100){
-  if(count<10) return 0;
-  return 1;
-}
+ int units;
+
+ if(num<10){if(num==digit)return 0;else return 1;}
+ else units=num%10;
  
- int dump;
- dump = _REC_E(count/10)+1;
- if(dump%2!=0)return 1;
+ int dump; 
+ dump = _REC_E(num/10,digit)+1;
+ if(dump%2!=0 && units==digit)return 1;
  else return 0;
 }
 
@@ -25,14 +22,14 @@ int _REC_E(int count){
 int main(){
 //user_inp
  fprintf(stdout,"\e[0;94m[ENTRY]\e[0;97m:");
- fscanf(stdin,"%d",&num);
+ fscanf(stdin,"%d,%d",&num,&digit);
 
 
 
 //call
  fprintf(stdout,"\n\n\e[0;94m:::[OUT]:::\e[0;97m\n\n");
- if(_REC_E(num)==1)fprintf(stdout,"EVEN_DIGITS");
- if(_REC_E(num)==0)fprintf(stdout,"ODD_DIGITS");
+ if(_REC_E(num,digit)==1)fprintf(stdout,"EVEN_DIGITS");
+ if(_REC_E(num,digit)==0)fprintf(stdout,"ODD_DIGITS");
  fprintf(stdout,"\n\n");
 //esc
  return 0;
