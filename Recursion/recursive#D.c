@@ -6,7 +6,7 @@ char word;
 
 
 //func
-int _REC_C(int count){
+int _REC_D(int count){
  int units=count%10;
  int tens=(count/10)%10;
  
@@ -33,9 +33,9 @@ int main(){
 
 //call
  fprintf(stdout,"\n\n\e[0;94m:::[OUT]:::\e[0;97m\n\n");
- if(_REC_C(num)==1)fprintf(stdout,"ASCENDING");
- if(_REC_C(num)==-1)fprintf(stdout,"DESCENDING");
- if(_REC_C(num)==0)fprintf(stdout,"NONE");
+ if(_REC_D(num)==1)fprintf(stdout,"ASCENDING");
+ if(_REC_D(num)==-1)fprintf(stdout,"DESCENDING");
+ if(_REC_D(num)==0)fprintf(stdout,"NONE");
  fprintf(stdout,"\n\n");
 //esc
  return 0;
